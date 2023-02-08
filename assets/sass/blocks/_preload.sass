@@ -1,0 +1,40 @@
+#preload
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 100
+    background: #E6E5E0
+    transition: 0.5s all
+    .progress
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: absolute
+        bottom: 124px
+        left: 50%
+        transform: translateX(-50%)
+        .number 
+            font-family: 'Arial', sans-serif
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+        .dash
+            width: 820px
+            height: 4px
+            background: #FFFFFF
+            display: flex
+            justify-content: center
+            margin-top: 10px
+            span 
+                width: 0%
+                height: 100%
+                background: #000
+                transition: 0.2s all
+    img 
+        width: 300px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)   

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <title>North Point Services</title>
+</head>
+<body>
+    <div id="preload">
+        <img src="/assets/images/logo.svg" alt="logo">
+        <div class="progress">
+            <div class="number">00%</div>
+            <div class="dash">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__top text_white text_fz16">
+            <div class="header__top-left">Financing Options Are Available!</div>
+            <div class="header__top-right">
+                <div class="header__top-item">Give Us a Call!</div>
+                <div class="header__top-item"><b>Interior Projects</b>(612) 290-1415</div>
+                <div class="header__top-item"><b>Exterior Projects: (612) 227-6671</b></div>
+            </div>
+        </div>
+        <div class="header__bott">
+            <a href="/" class="header__logo">
+                <img src="/assets/images/logo.svg" alt="logo">
+            </a>
+            <ul class="header__menu text text_fz16 text_upper">
+                <li class="header__menu-item"><a href="/">HOME</a></li>
+                <li class="header__menu-item"><a href="/about/">ABOUT US</a></li>
+                <li class="header__menu-item target-menu" data-sub="services">
+                    <div class="box"></div>
+                    <a href="/services/">
+                        SERVICES
+                        <svg class="arrow" width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0.75L4.5 4.25L1 0.75" stroke="#4F4F51" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="header__submenu" data-submenu="services">
+                        <div class="main__tabs">
+                            <div class="main__tabs-left text_black text_fz18 text_upper text_fw500">
+                                <div class="main__tabs-tab active">
+                                    <div class="number">01</div>
+                                    Storm Damage Repair
+                                </div>
+                                <div class="main__tabs-tab">
+                                    <div class="number">02</div>
+                                    Residential Roofing
+                                </div>
+                                <div class="main__tabs-tab">
+                                    <div class="number">03</div>
+                                    Commercial Roofing
+                                </div>
+                                <div class="main__tabs-tab">
+                                    <div class="number">04</div>
+                                    Siding
+                                </div>
+                                <div class="main__tabs-tab">
+                                    <div class="number">05</div>
+                                    Doors & Windows
+                                </div>
+                                <div class="main__tabs-tab">
+                                    <div class="number">06</div>
+                                    Bathrooms
+                                </div>
+                            </div>
+                            <div class="main__tabs-right">
+                                <div class="main__tabs-page active">
+                                    <img src="/assets/images/slider1.jpg" alt="">
+                                    <div class="title">01<span class="line"></span>Storm Damage Repair</div>
+                                </div>
+                                <div class="main__tabs-page">
+                                    <img src="/assets/images/slider2.jpg" alt="">
+                                    <div class="title">02<span class="line"></span>Residential Roofing</div>
+                                </div>
+                                <div class="main__tabs-page">
+                                    <img src="/assets/images/slider3.jpg" alt="">
+                                    <div class="title">03<span class="line"></span>Commercial Roofing</div>
+                                </div>
+                                <div class="main__tabs-page">
+                                    <img src="/assets/images/slider4.jpg" alt="">
+                                    <div class="title">04<span class="line"></span>Siding</div>
+                                </div>
+                                <div class="main__tabs-page">
+                                    <img src="/assets/images/slider5.jpg" alt="">
+                                    <div class="title">05<span class="line"></span>Doors & Windows</div>
+                                </div>
+                                <div class="main__tabs-page">
+                                    <img src="/assets/images/slider6.jpg" alt="">
+                                    <div class="title">06<span class="line"></span>Bathrooms</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__submenu-text text_black text_fz16 text_fw500">
+                            As soon as you notice signs of missing shingles, leakages, or mold growth, don’t hesitate to call us! We have whatever it takes to keep your home or business protected at all times.
+                        </div>
+                    </div>
+                </li>
+                <li class="header__menu-item"><a href="/projects/">OUR PROJECTS</a></li>
+                <li class="header__menu-item">
+                    <a href="/areas/">
+                        AREAS WE SERVE
+                        <svg class="arrow" width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0.75L4.5 4.25L1 0.75" stroke="#4F4F51" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__menu-item"><a href="/contacts/">CONTACT US</a></li>
+            </ul>
+            <button class="button button_black button_noneimg text_black text_fz14 text_upper">
+                <span class="box-rt"></span>
+                <span class="box-lt"></span>
+                GET A FREE ESTIMATE
+                <span class="box-rb"></span>
+                <span class="box-lb"></span>
+            </button>
+        </div>
+    </header>      
+    <main class="main">
+        <svg class="better-build fade" width="600" height="333" viewBox="0 0 600 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M56.72 62L53.54 50.84H40.22L37.04 62H30.2L42.44 20.12H51.62L63.86 62H56.72ZM47.12 26.9H46.64L41.48 45.26H52.28L47.12 26.9ZM105.933 20.12H120.393C124.193 20.12 127.133 21.1 129.213 23.06C131.333 25.02 132.393 27.7 132.393 31.1C132.393 33.54 131.793 35.48 130.593 36.92C129.393 38.36 127.773 39.38 125.733 39.98V40.28C128.173 40.84 130.133 41.92 131.613 43.52C133.093 45.08 133.833 47.3 133.833 50.18C133.833 51.9 133.553 53.48 132.993 54.92C132.433 56.36 131.633 57.62 130.593 58.7C129.553 59.74 128.293 60.56 126.813 61.16C125.373 61.72 123.773 62 122.013 62H105.933V20.12ZM119.973 56.84C122.213 56.84 123.933 56.38 125.133 55.46C126.333 54.54 126.933 53.06 126.933 51.02V48.86C126.933 46.82 126.333 45.34 125.133 44.42C123.933 43.5 122.213 43.04 119.973 43.04H112.533V56.84H119.973ZM119.013 38.12C121.133 38.12 122.733 37.72 123.813 36.92C124.933 36.08 125.493 34.7 125.493 32.78V30.62C125.493 28.7 124.933 27.34 123.813 26.54C122.733 25.7 121.133 25.28 119.013 25.28H112.533V38.12H119.013ZM142.09 62V20.12H168.31V25.76H148.81V37.94H167.59V43.58H148.81V56.36H168.31V62H142.09ZM194.266 25.76V62H187.546V25.76H174.406V20.12H207.406V25.76H194.266ZM230.243 25.76V62H223.523V25.76H210.383V20.12H243.383V25.76H230.243ZM250.019 62V20.12H276.239V25.76H256.739V37.94H275.519V43.58H256.739V56.36H276.239V62H250.019ZM292.536 62H285.876V20.12H301.536C305.536 20.12 308.576 21.24 310.656 23.48C312.776 25.72 313.836 28.8 313.836 32.72C313.836 35.92 313.056 38.56 311.496 40.64C309.936 42.72 307.696 44 304.776 44.48L314.436 62H306.996L298.116 45.08H292.536V62ZM300.576 39.68C304.736 39.68 306.816 37.78 306.816 33.98V31.4C306.816 27.6 304.736 25.7 300.576 25.7H292.536V39.68H300.576ZM357.289 62L354.289 20.12H360.169L361.669 44.48L362.329 55.22H362.809L367.549 30.26H374.209L378.949 55.22H379.429L380.089 44.48L381.649 20.12H387.289L384.289 62H375.289L371.029 37.76H370.549L366.289 62H357.289ZM416.486 62L413.306 50.84H399.986L396.806 62H389.966L402.206 20.12H411.386L423.626 62H416.486ZM406.886 26.9H406.406L401.246 45.26H412.046L406.886 26.9ZM439.382 62V46.22L425.462 20.12H432.962L438.302 30.56L442.622 39.5H442.982L447.362 30.56L452.702 20.12H460.022L446.102 46.22V62H439.382ZM518.055 25.76V62H511.335V25.76H498.195V20.12H531.195V25.76H518.055ZM550.672 62.72C548.032 62.72 545.732 62.24 543.772 61.28C541.852 60.28 540.252 58.86 538.972 57.02C537.732 55.18 536.812 52.92 536.212 50.24C535.612 47.56 535.312 44.5 535.312 41.06C535.312 37.66 535.612 34.62 536.212 31.94C536.812 29.22 537.732 26.94 538.972 25.1C540.252 23.26 541.852 21.86 543.772 20.9C545.732 19.9 548.032 19.4 550.672 19.4C553.312 19.4 555.592 19.9 557.512 20.9C559.472 21.86 561.072 23.26 562.312 25.1C563.592 26.94 564.532 29.22 565.132 31.94C565.732 34.62 566.032 37.66 566.032 41.06C566.032 44.5 565.732 47.56 565.132 50.24C564.532 52.92 563.592 55.18 562.312 57.02C561.072 58.86 559.472 60.28 557.512 61.28C555.592 62.24 553.312 62.72 550.672 62.72ZM550.672 57.14C553.672 57.14 555.792 56.02 557.032 53.78C558.272 51.5 558.892 48.42 558.892 44.54V37.52C558.892 33.68 558.272 30.64 557.032 28.4C555.792 26.12 553.672 24.98 550.672 24.98C547.672 24.98 545.552 26.12 544.312 28.4C543.072 30.64 542.452 33.68 542.452 37.52V44.6C542.452 48.44 543.072 51.5 544.312 53.78C545.552 56.02 547.672 57.14 550.672 57.14Z" fill="#07070A"/>
+            <path d="M16 138.4H64.6C77.8 138.4 87.9333 141.733 95 148.4C102.2 154.933 105.8 163.867 105.8 175.2C105.8 183.2 103.8 189.6 99.8 194.4C95.9333 199.2 90.4 202.667 83.2 204.8V205.8C91.6 207.8 98.2 211.467 103 216.8C107.933 222 110.4 229.4 110.4 239C110.4 244.867 109.4 250.2 107.4 255C105.533 259.667 102.8 263.733 99.2 267.2C95.7333 270.667 91.4667 273.333 86.4 275.2C81.4667 277.067 75.8667 278 69.6 278H16V138.4ZM61.6 259C68.9333 259 74.4 257.667 78 255C81.7333 252.2 83.6 247.467 83.6 240.8V234.2C83.6 227.667 81.7333 223.067 78 220.4C74.4 217.6 68.9333 216.2 61.6 216.2H41.6V259H61.6ZM58.2 198C65.2667 198 70.4667 196.733 73.8 194.2C77.2667 191.667 79 187.267 79 181V174.4C79 168.133 77.2667 163.733 73.8 161.2C70.4667 158.667 65.2667 157.4 58.2 157.4H41.6V198H58.2ZM158.522 138.4V225.4C158.522 230.6 158.655 235.267 158.922 239.4C159.322 243.533 160.189 247.067 161.522 250C162.989 252.8 165.122 255 167.922 256.6C170.855 258.2 174.855 259 179.922 259C184.989 259 188.922 258.2 191.722 256.6C194.655 255 196.789 252.8 198.122 250C199.589 247.067 200.455 243.533 200.722 239.4C201.122 235.267 201.322 230.6 201.322 225.4V138.4H227.522V221.4C227.522 231.267 226.922 239.867 225.722 247.2C224.522 254.533 222.189 260.667 218.722 265.6C215.255 270.533 210.389 274.267 204.122 276.8C197.989 279.2 189.922 280.4 179.922 280.4C169.922 280.4 161.789 279.2 155.522 276.8C149.389 274.267 144.589 270.533 141.122 265.6C137.655 260.667 135.322 254.533 134.122 247.2C132.922 239.867 132.322 231.267 132.322 221.4V138.4H158.522ZM255.444 278V258.4H286.844V158H255.444V138.4H344.244V158H312.844V258.4H344.244V278H255.444ZM379.766 278V138.4H405.966V256.4H467.766V278H379.766ZM494.288 138.4H537.688C555.821 138.4 569.288 144.4 578.088 156.4C587.021 168.4 591.488 185.667 591.488 208.2C591.488 230.867 587.021 248.2 578.088 260.2C569.288 272.067 555.821 278 537.688 278H494.288V138.4ZM535.888 257C545.488 257 552.554 253.867 557.088 247.6C561.754 241.333 564.088 232.2 564.088 220.2V196C564.088 184.133 561.754 175.067 557.088 168.8C552.554 162.533 545.488 159.4 535.888 159.4H520.088V257H535.888Z" fill="#A3A3A3"/>
+        </svg>  
+        <section class="main-sequence" desktop-sequence="ProtohomesAssembling00.jpg,ProtohomesAssembling01.jpg,ProtohomesAssembling02.jpg,ProtohomesAssembling03.jpg,ProtohomesAssembling04.jpg,ProtohomesAssembling05.jpg,ProtohomesAssembling06.jpg,ProtohomesAssembling07.jpg,ProtohomesAssembling08.jpg,ProtohomesAssembling09.jpg,ProtohomesAssembling10.jpg,ProtohomesAssembling11.jpg,ProtohomesAssembling12.jpg,ProtohomesAssembling13.jpg,ProtohomesAssembling14.jpg,ProtohomesAssembling15.jpg,ProtohomesAssembling16.jpg,ProtohomesAssembling17.jpg,ProtohomesAssembling18.jpg,ProtohomesAssembling19.jpg,ProtohomesAssembling20.jpg,ProtohomesAssembling21.jpg,ProtohomesAssembling22.jpg,ProtohomesAssembling23.jpg,ProtohomesAssembling24.jpg,ProtohomesAssembling25.jpg,ProtohomesAssembling26.jpg,ProtohomesAssembling27.jpg,ProtohomesAssembling28.jpg,ProtohomesAssembling29.jpg,ProtohomesAssembling30.jpg,ProtohomesAssembling31.jpg,ProtohomesAssembling32.jpg,ProtohomesAssembling33.jpg,ProtohomesAssembling34.jpg,ProtohomesAssembling35.jpg,ProtohomesAssembling36.jpg,ProtohomesAssembling37.jpg,ProtohomesAssembling38.jpg,ProtohomesAssembling39.jpg,ProtohomesAssembling40.jpg,ProtohomesAssembling41.jpg,ProtohomesAssembling42.jpg,ProtohomesAssembling43.jpg,ProtohomesAssembling44.jpg,ProtohomesAssembling45.jpg,ProtohomesAssembling46.jpg,ProtohomesAssembling47.jpg,ProtohomesAssembling48.jpg,ProtohomesAssembling49.jpg,ProtohomesAssembling50.jpg,ProtohomesAssembling51.jpg,ProtohomesAssembling52.jpg,ProtohomesAssembling53.jpg,ProtohomesAssembling54.jpg,ProtohomesAssembling55.jpg,ProtohomesAssembling56.jpg,ProtohomesAssembling57.jpg,ProtohomesAssembling58.jpg,ProtohomesAssembling59.jpg,ProtohomesAssembling60.jpg,ProtohomesAssembling61.jpg,ProtohomesAssembling62.jpg,ProtohomesAssembling63.jpg,ProtohomesAssembling64.jpg,ProtohomesAssembling65.jpg,ProtohomesAssembling66.jpg,ProtohomesAssembling67.jpg,ProtohomesAssembling68.jpg,ProtohomesAssembling69.jpg,ProtohomesAssembling70.jpg,ProtohomesAssembling71.jpg,ProtohomesAssembling72.jpg,ProtohomesAssembling73.jpg,ProtohomesAssembling74.jpg,ProtohomesAssembling75.jpg,ProtohomesAssembling76.jpg,ProtohomesAssembling77.jpg,ProtohomesAssembling78.jpg,ProtohomesAssembling79.jpg,ProtohomesAssembling80.jpg" desktop-path="/assets/images/desktop/">
+            <div class="main-sequence-cont">
+                <!-- <img src="/assets/images/desktop/ProtohomesAssembling00.jpg" alt="seq"> -->
+            </div>
+        </section>
+        <section class="main__work">
+            <h2 class="text_black text_fz60 text_upper text_fw500">Work With a Top-Rated Roofing Company in</h2>
+            <h3 class="text_fz200 text_upper text_fw600">minnesota,MN</h3>
+            <div class="main__work-images">
+                <div class="main__work-image"><img src="/assets/images/top1.jpg" alt="top"></div>
+                <div class="main__work-image"><img src="/assets/images/top2.jpg" alt="top"></div>
+                <div class="main__work-image"><img src="/assets/images/top3.jpg" alt="top"></div>
+                <div class="main__work-image"><img src="/assets/images/bott2.jpg" alt="bott"></div>
+                <div class="main__work-image"><img src="/assets/images/bott1.jpg" alt="bott"></div>
+                <div class="main__work-image"><img src="/assets/images/bott3.jpg" alt="bott"></div>
+                <!-- <div class="main__work-images-top">
+                    <div class="trans-target lt"><img src="/assets/images/top1.jpg" alt="top"></div>
+                    <div class="trans-target ct"><img src="/assets/images/top2.jpg" alt="top"></div>
+                    <div class="trans-target rt"><img src="/assets/images/top3.jpg" alt="top"></div>
+                </div>
+                <div class="main__work-images-bott">
+                    <div class="trans-target lb"><img src="/assets/images/bott1.jpg" alt="bott"></div>
+                    <div class="target-block">
+                        <img class="target" src="/assets/images/bott2.jpg" alt="bott">
+                    </div>
+                    <div class="trans-target rb"><img src="/assets/images/bott3.jpg" alt="bott"></div>
+                </div> -->
+            </div>           
+        </section>
+        <section class="main__toprate">
+            <div class="back"></div>
+            <img src="/assets/images/toprate.svg" class="slogan fade fade-top fade-top-target elem_animate" alt="">
+            <div class="text text_fz16 text_fw500 fade fade-top fade-top-target elem_animate">
+                When you’re looking for a roofing company to handle your repair or maintenance needs, you want someone who understands the importance of trust, quality workmanship, and customer satisfaction. We’ve been in the business since 2017, serving our clients in and near Lakeville, MN, and we consider it our mission to be the best at what we do.<br><br>
+                We’ve worked with all types of materials, from cedar shingles to metal roofs, and we know how to get the roof of your property looking great again and restore its structural integrity. We’re siding contractors, too, so if you want to ensure that your home is properly protected from the elements, ours is the number you should call.
+            </div>
+            <img src="/assets/images/mark2.svg" class="mark fade fade-top fade-top-target elem_animate" alt="">
+            <button class="button button_black button_long button_noneimg text text_fz14 text_upper">
+                <span class="box-rt"></span>
+                <span class="box-lt"></span>
+                VIEW OUR WORK
+                <span class="box-rb"></span>
+                <span class="box-lb"></span>
+            </button>
+        </section>
+        <section class="main__services">
+            <div class="words-line words-line1">
+                <span class="word">Contact Us Today to Get a Free Estimate!</span>
+                <span class="line"></span>
+                <span class="word">Contact Us Today to Get a Free Estimate!</span>
+            </div>
+            <div class="words-line words-line2">
+                <span class="word">Contact Us Today to Get a Free Estimate!</span>
+                <span class="line"></span>
+                <span class="word">Contact Us Today to Get a Free Estimate!</span>
+            </div>
+            <h2 class="text_fz60 text_upper text_fw500 text_black elem_animate fade fade-top fade-top-target elem_animate">What We Do!</h2>
+            <h3 class="text_fz100 text_upper text_fw600 elem_animate fade fade-top fade-top-target elem_animate">Services We’re Offering</h3>
+            <div class="main__services-info">
+                <img src="/assets/images/phone.png" alt="" class="elem_animate fade fade-top fade-top-target">
+                <div class="text elem_animate fade fade-top fade-top-target">
+                    Contact Us Today to Get a Free Estimate!<br>
+Start your roofing or siding project by sharing your ideas with us so we can provide you with an accurate estimate. This way you can get a realistic picture of how much you’ll invest. We’ll walk you through all available options to make your vision a reality.
+                    <a href="/contacts/" class="button button_black button_long button_noneimg text_black text_fz14 text_upper">
+                        <span class="box-rt"></span>
+                        <span class="box-lt"></span>
+                        CONTACT US
+                        <span class="box-rb"></span>
+                        <span class="box-lb"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="main__titles">
+            <div class="main__titles-item">
+                <img src="/assets/images/slider1.jpg" alt="">
+                <h3>Storm Damage Repair</h3>
+            </div>
+            <div class="main__titles-item">
+                <img src="/assets/images/slider2.jpg" alt="">
+                <h3>Residential Roofing</h3>
+            </div>
+            <div class="main__titles-item">
+                <img src="/assets/images/slider3.jpg" alt="">
+                <h3>Commercial Roofing</h3>
+            </div>
+            <div class="main__titles-item">
+                <img src="/assets/images/slider4.jpg" alt="">
+                <h3>Siding</h3>
+            </div>
+            <div class="main__titles-item">
+                <img src="/assets/images/slider5.jpg" alt="">
+                <h3>Doors & Windows</h3>
+            </div>
+            <div class="main__titles-item">
+                <img src="/assets/images/slider6.jpg" alt="">
+                <h3>Bathrooms</h3>
+            </div>
+        </section>
+        <section class="main__speak">
+            <img src="/assets/images/logo.svg" alt="logo" class="main__speak-logo">
+            <div class="main__speak-left">
+                <div class="main__speak-person elem_animate fade fade-top fade-top-target">
+                    <img src="/assets/images/speak2.jpg" alt="">
+                    <h3>Alex Legun</h3>
+                    <p>Partner Contractor</p>
+                    <button class="button button_black button_noneimg button_llong text_black text_fz14 text_upper">
+                        <span class="box-rt"></span>
+                        <span class="box-lt"></span>
+                        EMAIL
+                        <span class="box-rb"></span>
+                        <span class="box-lb"></span>
+                    </button>
+                </div>
+                <div class="main__speak-person mt elem_animate fade fade-top fade-top-target">
+                    <img src="/assets/images/speak1.jpg" alt="">
+                    <h3>Aleksey Zaytsev</h3>
+                    <p>Partner Contractor</p>
+                    <button class="button button_black button_noneimg button_llong text_black text_fz14 text_upper">
+                        <span class="box-rt"></span>
+                        <span class="box-lt"></span>
+                        EMAIL
+                        <span class="box-rb"></span>
+                        <span class="box-lb"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="main__speak-right">
+                <h2 class="elem_animate fade fade-top fade-top-target">Speak to Our Professional Contractors</h2>
+                <div class="text_fz16 text_fw500 elem_animate fade fade-top fade-top-target">
+                    When you’re in need of professional roof repair, you need a company that will provide the highest quality of work at a fair price. In fact, we’re so confident in our work that we offer a 100% satisfaction guarantee on all projects! Our team is committed to customer satisfaction and will work closely with you to make sure you get what you need. We take pride in our professional approach, which means we’ll never cut corners or sacrifice quality for speed—and we’ll always treat your property with care.
+                    <br><br><br>
+                    For more information about our roofing and siding services, don’t hesitate to give us a call. Our contractors in and near Lakeville, MN are eager to help you! We have the skills to get the job done right, on time, and within budget. The home or business of your dreams is just one click away.
+                </div>
+            </div>
+        </section>
+        <section class="main__roof">
+            <h3 class="elem_animate fade fade-top fade-top-target">Get the Best Roof and Siding</h3>
+            <h2 class="elem_animate fade fade-top fade-top-target">Insurance Claim Assitance Is Available!</h2>
+            <img src="/assets/images/getstarted.svg" alt="getst" class="getst white">
+            <img src="/assets/images/getstartedb.svg" alt="getst" class="getst black">
+            <button class="button1 button button_black button_white button_noneimg text_white text_fz14 text_upper">
+                <span class="box-rt"></span>
+                <span class="box-lt"></span>
+                GET A FREE ESTIMATE
+                <span class="box-rb"></span>
+                <span class="box-lb"></span>
+            </button>
+            <button class="button2 button button_black button_noneimg text_fz14 text_upper">
+                <span class="box-rt"></span>
+                <span class="box-lt"></span>
+                GET A FREE ESTIMATE
+                <span class="box-rb"></span>
+                <span class="box-lb"></span>
+            </button>
+            <div class="main__roof-images">
+                <img src="/assets/images/roof4.png" alt="">
+                <img src="/assets/images/roof3.png" alt="">
+                <img src="/assets/images/roof5.png" alt="">
+                <img src="/assets/images/roof6.png" alt="">
+                <img src="/assets/images/roof7.png" alt="">
+                <img src="/assets/images/roof8.png" alt="">
+                <!-- <img src="/assets/images/roof1.png" alt=""> -->
+                <img src="/assets/images/roof2.png" alt="">
+            </div>
+        </section>
+        <section class="main__map">
+            <h3 class="text_black text_fz60 text_upper text_fw500 elem_animate fade fade-top fade-top-target">Find Us!</h3>
+            <h2 class="text_fz100 text_upper text_fw600 elem_animate fade fade-top fade-top-target">Areas We Serve</h2>
+            <div class="main__map-info">
+                <div class="main__map-left">
+                    <img src="/assets/images/merk.svg" alt="">
+                    <ul class="main__map-list">
+                        <li data-point="point-1">01. Minneapolis, MN</li>
+                        <li data-point="point-2">02. Lakeville, MN</li>
+                        <li data-point="point-3">03. Eden Prairie, MN</li>
+                        <li data-point="point-4">04. Hopkins, MN</li>
+                        <li data-point="point-5">05. Inver Grove Heights, MN</li>
+                        <li data-point="point-6">06. Loretto, MN</li>
+                        <li data-point="point-7">07. Maple Grove, MN</li>
+                        <li data-point="point-8">08. Maple Plain, MN</li>
+                        <li data-point="point-9">09. Minnetonka, MN</li>
+                        <li data-point="point-10">10. Osseo, MN</li>
+                        <li data-point="point-11">11. Saint Paul, MN</li>
+                        <li data-point="point-12">12. South Saint Paul, MN</li>
+                        <li data-point="point-13">13. Stillwater, MN</li>
+                    </ul>
+                </div>
+                <div class="main__map-right" id="map"></div>
+            </div>
+        </section>
+        <section class="main__contacts">
+            <h3 class="text_black text_fz60 text_fw500 text_upper elem_animate fade fade-top fade-top-target">When You're Ready, We'll Be There for You.</h3>
+            <h2 class="text_fz100 text_fw600 text_upper elem_animate fade fade-top fade-top-target">Contact Our Experts Today!</h2>
+            <h4 class="elem_animate fade fade-top fade-top-target">Would you prefer an in-home or virtual consultation?</h4>
+            <div class="main__contacts-form">
+                <div class="main__contacts-format elem_animate fade fade-top fade-top-target">
+                    <button data-check="home" class="button button_black button_img button_llong check text_black text_fz14 text_upper">
+                        <span class="box-rt"></span>
+                        <span class="box-lt"></span>
+                        <div class="circle"><img src="/assets/images/check.svg" alt=""></div>IN-HOME
+                        <span class="box-rb"></span>
+                        <span class="box-lb"></span>
+                    </button>
+                    <button data-check="virt" class="button button_black button_img button_llong text_black text_fz14 text_upper">
+                        <span class="box-rt"></span>
+                        <span class="box-lt"></span>
+                        <div class="circle"><img src="/assets/images/check.svg" alt=""></div>VIRTUAL
+                        <span class="box-rb"></span>
+                        <span class="box-lb"></span>
+                    </button>
+                </div>
+                <form action="/">
+                    <div class="main__contacts-left">
+                        <h5>What products are you interested in?</h5>
+                        <p>*Select all that apply</p>
+                        <ul>
+                            <li>
+                                <div class="circle"><span></span></div>Roofing & Gutters
+                            </li>
+                            <li>
+                                <div class="circle"><span></span></div>Siding & Windows
+                            </li>
+                            <li>
+                                <div class="circle"><span></span></div>Bathroom Renovations
+                            </li>
+                            <li>
+                                <div class="circle"><span></span></div>Basement Renovations
+                            </li>
+                        </ul>
+                        <p class="small">*Your information remains confidential and will be used only by Our Company to contact you about your free quote.</p>
+                    </div>
+                    <div class="main__contacts-right">
+                        <div class="main__contacts-inp">
+                            <label for="fname">Full Name</label><input name="fname" id="fname" type="text">
+                        </div>
+                        <div class="main__contacts-inp">
+                            <label for="fmail">Email</label><input name="fmail" id="fmail" type="email">
+                        </div>
+                        <div class="main__contacts-inp">
+                            <label for="fphone">Phone</label><input name="fphone" id="fphone" type="tel">
+                        </div>
+                        <div class="main__contacts-inp">
+                            <label for="fcode">Zip Code</label><input name="fcode" id="fcode" type="text">
+                        </div>
+                        <div class="main__contacts-inp">
+                            <label for="fmess">Message</label><input name="fmess" id="fmess" type="text">
+                        </div>
+                        <button class="button button_black button_form button_white button_noneimg text_white text_fz14 text_upper">
+                            <span class="box-rt"></span>
+                            <span class="box-lt"></span>
+                            Submit Quote Request
+                            <span class="box-rb"></span>
+                            <span class="box-lb"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <img src="/assets/images/logo.svg" alt="logo" class="main__bottlogo"> 
+    </main>
+    <div class="modal">
+        <div class="modal__close"></div>
+        <div class="modal__left arrow" data-slide="-1">
+            <span></span>
+        </div>
+        <img class="modal__image" src="/assets/images/top1.jpg" alt="">
+        <div class="modal__right arrow" data-slide="1">
+            <span></span>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__top text_upper">
+            <div class="footer__top-col flex-col">
+                <div class="row">
+                    <h3 class="text_fz16 text_fw500">Explore</h3>
+                    <ul class="footer__top-lp text_fz14">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about/">About Us</a></li>
+                        <li><a href="/areas/">Areas We Serve</a></li>
+                        <li><a href="/projects/">Our Projects</a></li>
+                    </ul>
+                </div>
+                <div class="row socials">
+                    <h3 class="text_fz16 text_fw500">Let's Get Social</h3>
+                    <div class="icons">
+                        <a href="">
+                            <img class="gray" src="/assets/images/social1.svg" alt="social1">
+                            <img class="colorfull" src="/assets/images/social1-col.svg" alt="social1-col">
+                        </a>
+                        <a href="">
+                            <img class="gray" src="/assets/images/social2.svg" alt="social2">
+                            <img class="colorfull" src="/assets/images/social2-col.svg" alt="social2-col">
+                        </a>
+                        <a href="">
+                            <img class="gray" src="/assets/images/social3.svg" alt="social3">
+                            <img class="colorfull" src="/assets/images/social3-col.svg" alt="social3-col">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__top-col text_fz16 text_fw500">
+                <h3 class="text_fz16 text_fw500">Contact Info</h3>
+                <div class="footer__top-lp">
+                    <b>Headquarters</b>
+                    <p>Lakeville, MN</p>
+                    <h4>Phone</h4>
+                    <p><a href="tel:6122276671">(612) 227-6671</a></p>
+                    <p><a href="tel:6122901415">(612) 290-1415</a></p>
+                    <h4>Email</h4>
+                    <p><a href="mailto:north.services@yahoo.com">north.services@yahoo.com</a></p>
+                </div>
+            </div>
+            <div class="footer__top-col">
+                <h3 class="text_fz16 text_fw500">Working Hours</h3>
+                <div class="footer__top-lp text_fz16 text_fw500">
+                    <div class="footer__top-row"><span class="text_fw600">Mon - Fri:</span><span class="gray">8:00 AM - 7:00 PM</span></div>
+                    <div class="footer__top-row"><span class="text_fw600">Sat:</span><span class="gray">8:00 AM - 3:00 PM</span></div>
+                    <div class="footer__top-row"><span class="text_fw600">Sun:</span><span class="gray">Closed</span></div>
+                </div>
+                <button class="button button_black button_noneimg text_black text_fz14 text_upper">
+                    <span class="box-rt"></span>
+                    <span class="box-lt"></span>
+                    GET A FREE ESTIMATE
+                    <span class="box-rb"></span>
+                    <span class="box-lb"></span>
+                </button>
+            </div>
+        </div>
+        <div class="footer__bott text_white text_fz14 text_upper">
+            ©2023, <span style="text-decoration: underline;">North Point Services Co.</span>. All Rights Reserved.
+        </div>
+    </footer>
+    
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

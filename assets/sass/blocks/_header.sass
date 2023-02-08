@@ -1,0 +1,85 @@
+.header
+    position: fixed
+    width: 100%
+    transition: 0.5s all ease-in-out
+    z-index: 10
+    &.hide
+        transform: translateY(-100%)
+    &__submenu
+        position: absolute
+        top: -1000%
+        left: 0
+        background-color: #fff
+        padding: 50px 7.81%
+        width: 100%
+        display: flex
+        gap: 66px
+        opacity: 0
+        z-index: -1
+        visibility: hidden
+        transition: 0.5s all
+        &.active
+            opacity: 1
+            visibility: visible
+            top: 98%
+        &-text 
+            width: 526px
+    &__top, &__bott 
+        padding-left: 7.81%
+        padding-right: 7.81%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__top
+        background: rgba(78, 78, 78, 1)
+        padding-top: 10px
+        padding-bottom: 7px
+        &-right
+            display: flex
+            gap: 50px
+    &__bott 
+        padding-top: 13px
+        padding-bottom: 13px
+        background-color: rgba(255, 255, 255, 1)
+    &__menu
+        display: flex
+        align-items: center
+        gap: 30px
+        &-item
+            .box 
+                height: 110px
+                position: absolute
+                width: 103px
+                top: 37px
+                cursor: pointer
+            a 
+                display: flex
+                align-items: center
+                transition: 0.3s all
+                gap: 17px
+                z-index: 2
+                position: relative
+                img, svg 
+                    cursor: pointer
+                svg *
+                    pointer-events: none
+                img, svg, svg *
+                    transition: 0.3s all
+            &:hover
+                a
+                    color: #A90606
+                svg 
+                    path 
+                        stroke: #A90606
+            &.active
+                a 
+                    color: #A90606
+                    img, svg 
+                        transform: rotate(180deg)
+                    svg 
+                        path 
+                            stroke: #A90606
+    &__logo 
+        width: 117px
+        img 
+            max-width: 100%

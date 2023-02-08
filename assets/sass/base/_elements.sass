@@ -1,0 +1,224 @@
+.text
+    &_fz14
+        font-size: 14px
+        line-height: 18px
+    &_fz16
+        font-size: 16px
+        line-height: 21px
+    &_fz18 
+        font-size: 18px
+        line-height: 23px
+    &_fz60 
+        font-size: 50px
+        line-height: 68px
+    &_fz100
+        font-size: 100px
+        line-height: 130px
+    &_fz200
+        font-size: 150px
+        line-height: 210px
+    &_gray
+        color: #A3A3A3
+    &_center
+        text-align: center
+    &_black
+        color: #07070A
+    &_white
+        color: #fff
+    &_upper
+        text-transform: uppercase
+    &_fw400
+        font-weight: 400
+    &_fw500
+        font-weight: 500
+    &_fw600
+        font-weight: 600
+    &_fw700
+        font-weight: 700
+.button
+    background: none 
+    display: inline-block
+    border: none
+    position: relative
+    padding: 16px 17px
+    cursor: pointer
+    z-index: 1
+    &_long
+        padding: 16px 42px
+    &_llong
+        padding: 16px 76px
+    &_form 
+        width: 100%
+        padding: 24px 0px
+    &_img
+        display: flex
+        align-items: center
+        gap: 18px
+        img 
+            opacity: 0
+            transition: 0.2s all
+        &.leave
+            .circle
+                border: 2px solid #fff
+                animation: color3 2s forwards
+        &.enter
+            .circle
+                border: 2px solid #fff
+        &.check
+            color: #fff
+            animation: none !important
+            &::after, &::before
+                opacity: 0
+                animation: none !important
+            span
+                height: 51%
+                width: 51%
+                animation: none !important
+            img 
+                opacity: 1
+            .circle
+                border: 2px solid #fff !important
+        .circle
+            transition: 0.2s all
+            width: 18px
+            height: 18px
+            border: 2px solid #020202
+            border-radius: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+    &_black
+        span 
+            position: absolute
+            display: block
+            background: #000
+            height: 0
+            width: 0
+            transition: 0.2s width, 0.3s height
+            z-index: -1
+            transform: scale(1) !important
+            &.box-rt
+                right: 0
+                top: 0
+            &.box-lt
+                left: 0
+                top: 0
+            &.box-rb
+                right: 0
+                bottom: 0
+            &.box-lb
+                left: 0
+                bottom: 0
+        &::after, &::before
+            content: ''
+            display: block
+            position: absolute
+            width: 100%
+            left: 0
+            height: 16px
+            border-left: 1px solid #07070A 
+            border-right: 1px solid #07070A 
+            transition: 0.2s all
+            transform: scale(1) !important
+        &::after
+            border-bottom: 1px solid #07070A
+            bottom: 0
+        &::before
+            border-top: 1px solid #07070A
+            top: 0
+        &.enter
+            color: #fff
+            &::after, &::before
+                opacity: 0
+            span
+                height: 51%
+                width: 51%
+        &.leave
+            animation: color 2s forwards
+            &::after, &::before
+                animation: opacity 2s forwards
+            span 
+                animation: leave 2s forwards
+    &_white 
+        span 
+            background: #fff
+        &::after, &::before
+            border-left: 1px solid #fff 
+            border-right: 1px solid #fff 
+        &::after
+            border-bottom: 1px solid #fff
+        &::before
+            border-top: 1px solid #fff
+        &.enter
+            color: #07070A
+        &.leave
+            animation: color2 2s forwards
+            &::after, &::before
+                animation: opacity 2s forwards
+            span 
+                animation: leave 2s forwards
+.fade
+    opacity: 0
+    animation: fade 1s ease-in-out forwards
+    &-target 
+        animation: none
+        &.vis
+            animation: fade 1s ease-in-out forwards
+    &-top 
+        transform: translateY(50px)
+        animation: fade-top 1s ease-in-out forwards
+        &-target 
+            animation: none
+            &.vis
+                animation: fade-top 1s ease-in-out forwards
+@keyframes fade-top 
+    0%
+        opacity: 0
+        transform: translateY(50px)
+    100%
+        opacity: 1
+        transform: translateY(0px)
+@keyframes fade 
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+@keyframes color
+    0%, 30%
+        color: #fff
+    40%, 100%
+        color: #07070A
+@keyframes color2
+    0%, 30%
+        color: #07070A
+    40%, 100%
+        color: #fff
+@keyframes color3
+    0%, 30%
+        border: 2px solid #fff
+    40%, 100%
+        border: 2px solid #020202
+@keyframes opacity 
+    0%, 65%
+        opacity: 0
+    75%, 100%
+        opacity: 1
+@keyframes leave
+    0%
+        height: 51%
+        width: 51%
+        opacity: 1
+    20%, 30%
+        height: 49%
+        width: 51%
+        opacity: 1
+    40%, 50%
+        height: 16px
+        width: 51%
+        opacity: 1
+    60%, 65%
+        width: 49%
+        height: 16px
+        opacity: 1
+    75%, 100%
+        opacity: 0

@@ -1,0 +1,144 @@
+---slider ver1
+<section class="main__slider">
+    <div class="main__slider-item active">
+        <div class="main__slider-item-col">
+            <h3>Storm Damage Repair</h3>
+            <div class="number">01</div>
+        </div>
+        <div class="main__slider-item-image">
+            <img src="/assets/images/slider1.jpg" alt="slider1">
+            <div class="main__slider-item-text text_white">
+                <div class="wnumber">01</div>
+                <span class="line"></span>
+                <div class="title">Storm Damage Repair</div>
+            </div>
+        </div>
+    </div>
+    <div class="main__slider-item">
+        <div class="main__slider-item-col">
+            <h3>Residential Roofing</h3>
+            <div class="number">02</div>
+        </div>
+        <div class="main__slider-item-image">
+            <img src="/assets/images/slider2.jpg" alt="slider1">
+            <div class="main__slider-item-text text_white">
+                <div class="wnumber">02</div>
+                <span class="line"></span>
+                <div class="title">Residential Roofing</div>
+            </div>
+        </div>
+    </div>
+    <div class="main__slider-item">
+        <div class="main__slider-item-col">
+            <h3>Commercial Roofing</h3>
+            <div class="number">03</div>
+        </div>
+        <div class="main__slider-item-image">
+            <img src="/assets/images/slider3.jpg" alt="slider1">
+            <div class="main__slider-item-text text_white">
+                <div class="wnumber">03</div>
+                <span class="line"></span>
+                <div class="title">Commercial Roofing</div>
+            </div>
+        </div>
+    </div>
+    <div class="main__slider-item">
+        <div class="main__slider-item-col">
+            <h3>Siding</h3>
+            <div class="number">04</div>
+        </div>
+        <div class="main__slider-item-image">
+            <img src="/assets/images/slider4.jpg" alt="slider1">
+            <div class="main__slider-item-text text_white">
+                <div class="wnumber">04</div>
+                <span class="line"></span>
+                <div class="title">Siding</div>
+            </div>
+        </div>
+    </div>
+    <div class="main__slider-item">
+        <div class="main__slider-item-col">
+            <h3>Doors & Windows</h3>
+            <div class="number">05</div>
+        </div>
+        <div class="main__slider-item-image">
+            <img src="/assets/images/slider5.jpg" alt="slider1">
+            <div class="main__slider-item-text text_white">
+                <div class="wnumber">05</div>
+                <span class="line"></span>
+                <div class="title">Doors & Windows</div>
+            </div>
+        </div>
+    </div>
+    <div class="main__slider-item">
+        <div class="main__slider-item-col">
+            <h3>Bathrooms</h3>
+            <div class="number">06</div>
+        </div>
+        <div class="main__slider-item-image">
+            <img src="/assets/images/slider6.jpg" alt="slider1">
+            <div class="main__slider-item-text text_white">
+                <div class="wnumber">06</div>
+                <span class="line"></span>
+                <div class="title">Bathrooms</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+---slider ver2
+<div class="main__tabs">
+    <div class="main__tabs-left text_black text_fz60 text_upper text_fw500">
+        <div class="main__tabs-tab active">
+            <div class="number">01</div>
+            Storm Damage Repair
+        </div>
+        <div class="main__tabs-tab">
+            <div class="number">02</div>
+            Residential Roofing
+        </div>
+        <div class="main__tabs-tab">
+            <div class="number">03</div>
+            Commercial Roofing
+        </div>
+        <div class="main__tabs-tab">
+            <div class="number">04</div>
+            Siding
+        </div>
+        <div class="main__tabs-tab">
+            <div class="number">05</div>
+            Doors & Windows
+        </div>
+        <div class="main__tabs-tab">
+            <div class="number">06</div>
+            Bathrooms
+        </div>
+    </div>
+    <div class="main__tabs-right">
+        <div class="main__tabs-page active">
+            <img src="/assets/images/slider1.jpg" alt="">
+            <div class="title">01<span class="line"></span>Storm Damage Repair</div>
+        </div>
+        <div class="main__tabs-page">
+            <img src="/assets/images/slider2.jpg" alt="">
+            <div class="title">02<span class="line"></span>Residential Roofing</div>
+        </div>
+        <div class="main__tabs-page">
+            <img src="/assets/images/slider3.jpg" alt="">
+            <div class="title">03<span class="line"></span>Commercial Roofing</div>
+        </div>
+        <div class="main__tabs-page">
+            <img src="/assets/images/slider4.jpg" alt="">
+            <div class="title">04<span class="line"></span>Siding</div>
+        </div>
+        <div class="main__tabs-page">
+            <img src="/assets/images/slider5.jpg" alt="">
+            <div class="title">05<span class="line"></span>Doors & Windows</div>
+        </div>
+        <div class="main__tabs-page">
+            <img src="/assets/images/slider6.jpg" alt="">
+            <div class="title">06<span class="line"></span>Bathrooms</div>
+        </div>
+    </div>
+</div>
